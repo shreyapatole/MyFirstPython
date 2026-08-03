@@ -63,3 +63,26 @@ del guest_list[0]
 print(guest_list)
 del guest_list[0]
 print(guest_list)
+
+print(f"Hello {guest_list[0]}!, You are still invited to attend Ms.{invitor}'s Party. See you at 8pm on Sunday! byeee")
+print(f"Hello {guest_list[1]}!, You are still invited to attend Ms.{invitor}'s Party. See you at 8pm on Sunday! byeee")
+favPlaces = ["Japan", "New York", "South Korea", "USA", "Singapore"]
+print(f"The original list of favorite places : {favPlaces}")
+# print(f"Sorted list using sorted() method : {sorted(favPlaces)}")
+# print(f"The original list again : {favPlaces}")
+# print(f"Reversed list using sorted method : {sorted(favPlaces, reverse = True)}")
+# print(f"The original list again : {favPlaces}")
+favPlaces.reverse()
+print(f"Reversed list using reverse method : {favPlaces}")
+favPlaces.reverse()
+print(f"Obtaining original list using reverse() method : {favPlaces}")
+
+print(guest_list)
+del guest_list[0]
+print(guest_list)
+del guest_list[0]
+print(guest_list)
+favPlaces.sort()
+print(f"Sorted list using sort() method : {favPlaces}")
+favPlaces.reverse()
+print(f"List in reversed alphabetical order : {favPlaces}")
