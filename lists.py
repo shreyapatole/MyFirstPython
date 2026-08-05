@@ -74,48 +74,67 @@
 # print(guest_list)
 
 
-favPlaces = ["Japan", "New York", "South Korea", "USA", "Singapore"]
-print(f"The original list of favorite places : {favPlaces}")
+# favPlaces = ["Japan", "New York", "South Korea", "USA", "Singapore"]
+# print(f"The original list of favorite places : {favPlaces}")
 # print(f"Sorted list using sorted() method : {sorted(favPlaces)}")
 # print(f"The original list again : {favPlaces}")
 # print(f"Reversed list using sorted method : {sorted(favPlaces, reverse = True)}")
 # print(f"The original list again : {favPlaces}")
-favPlaces.reverse()
-print(f"Reversed list using reverse method : {favPlaces}")
-favPlaces.reverse()
-print(f"Obtaining original list using reverse() method : {favPlaces}")
+# favPlaces.reverse()
+# print(f"Reversed list using reverse method : {favPlaces}")
+# favPlaces.reverse()
+# print(f"Obtaining original list using reverse() method : {favPlaces}")
 
-favPlaces.sort()
-print(f"Sorted list using sort() method : {favPlaces}")
-favPlaces.reverse()
-print(f"List in reversed alphabetical order : {favPlaces}")
+# favPlaces.sort()
+# print(f"Sorted list using sort() method : {favPlaces}")
+# favPlaces.reverse()
+# print(f"List in reversed alphabetical order : {favPlaces}")
 
 
-animals = ["Dog", "Cat", "Rabbit", "Parrot", "Fish"]
-print(f"Original list of animals : {animals}")  
-animals.append("Snake")
-print(f"Updated list of animals : {animals}") 
-animals.insert(2,"Eagle")
-print(f"Updated list of animals : {animals}") 
-del animals[5]
-print(f"Updated list of animals : {animals}") 
-removed_animal = animals.pop()
-print(f"Removed animal : {removed_animal}")
-print(f"Updated list of animals : {animals}")
-removed_animal = animals.pop(3)
-print(f"Removed animal : {removed_animal}")
-print(f"Updated list of animals : {animals}")
-animals.insert(4,"Elephant")
-animals.insert(2,"Lion")
-animals.insert(5,"Tiger")
-print(f"Modified List : {animals}")
-animals.remove("Parrot")
-print(f"Modified List : {animals}")
-print(f"Sorting using 'sorted()' : {sorted(animals)}")
-print(f"Original list : {animals}")
-print(f"Reversing using 'sorted()' : {sorted(animals, reverse = True)}")
-print(f"Original list : {animals}")
-animals.reverse()
-print(f"Reversed original list : {animals}")
-animals.sort()
-print(f"Sorted using sort() : {animals}")
+# animals = ["Dog", "Cat", "Rabbit", "Parrot", "Fish"]
+# print(f"Original list of animals : {animals}")  
+# animals.append("Snake")
+# print(f"Updated list of animals : {animals}") 
+# animals.insert(2,"Eagle")
+# print(f"Updated list of animals : {animals}") 
+# del animals[5]
+# print(f"Updated list of animals : {animals}") 
+# removed_animal = animals.pop()
+# print(f"Removed animal : {removed_animal}")
+# print(f"Updated list of animals : {animals}")
+# removed_animal = animals.pop(3)
+# print(f"Removed animal : {removed_animal}")
+# print(f"Updated list of animals : {animals}")
+# animals.insert(4,"Elephant")
+# animals.insert(2,"Lion")
+# animals.insert(5,"Tiger")
+# print(f"Modified List : {animals}")
+# animals.remove("Parrot")
+# print(f"Modified List : {animals}")
+# print(f"Sorting using 'sorted()' : {sorted(animals)}")
+# print(f"Original list : {animals}")
+# print(f"Reversing using 'sorted()' : {sorted(animals, reverse = True)}")
+# print(f"Original list : {animals}")
+# animals.reverse()
+# print(f"Reversed original list : {animals}")
+# animals.sort()
+# print(f"Sorted using sort() : {animals}")
+
+# print("/n/n/n")
+# #intential errors
+# animals.insert(10,"horse")
+# for i in animals:
+#     print(f"{animals}")
+# print(f"Updated list of animals : {animals}")
+# print(f"item at index 9th : {animals[9]}")
+
+
+fav_food = ["Biryani", "Chhole Bhature", "Pani Puri"]
+for food in fav_food :
+    print(f"I like {food}")
+print("I really love to eat these foods!!!")
+
+pets = ["Hamster", "Dog", "Cat"]
+for pet in pets : 
+    print(f"A {pet} would make a great pet.")
+print("Above animals are a great choice for pets.")
