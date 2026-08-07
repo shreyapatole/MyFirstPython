@@ -73,3 +73,49 @@ if "Grapes" in fav_fruits :
     print("One of your favorites includes Grapes.")
 if "Pineapple" in fav_fruits :
     print("One of your favorites includes Pineapple.")
+
+
+
+# Working with lists and if stmnts
+users = ["admin", "shreya", "devyani", "piu", "omkar"]
+if users :
+    for user in users :
+        if user.lower() == "admin" :
+            print(f"Hello {user.title()}, would you like to see the status report?")
+        else :
+            print(f"Hello {user.title()}, check out the latest updates in your account.")
+else :
+    print("No users found!")
+
+current_usernames_org = ["shreya", "devyani", "PIU", "omkar", "Samarth"]
+current_usernames = []
+if current_usernames_org :
+    for user in current_usernames_org :
+        current_usernames.append(user.lower())
+else :
+    print("List of current usernames is empty!")
+
+new_usernames = ["shreya", "srushti", "rutuja", "piu", "Sejal"]
+if new_usernames and current_usernames :
+    for new_username in new_usernames :
+        if new_username in current_usernames :
+            print(f"Username {new_username.lower()} not available, try a new one.")
+        else :
+            print(f"Username {new_username.lower()} is available, press 'Enter' to confirm.")
+else :
+    print("Check if one of the list is empty.")
+
+
+numbers = (1, 2, 3, 4, 5, 6, 7, 8, 9, "s")
+if numbers :
+    for number in numbers :
+        if number == 1 :
+            print(f"{number}st")
+        elif number == 2 :
+            print(f"{number}nd")
+        elif number == 3 :
+            print(f"{number}rd")
+        elif isinstance(number,int) :
+            print(f"{number}th")
+        else :
+            print("Not an integer.")
