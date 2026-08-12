@@ -92,4 +92,10 @@ for name, place in dream_vacation.items() :
 
 
 
-
+numbers = [1, 2, 2, 3, 4, 4, 5, 5, 5]
+numbers_modified = []
+for n in numbers :
+    if n not in set(numbers_modified) :
+        numbers_modified.append(n)
+print(numbers)
+print(numbers_modified)

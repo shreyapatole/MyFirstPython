@@ -192,3 +192,12 @@ for city, city_info in cities.items() :
     print(f"\tFact about {city.title()} : {city_info['fact']}.")
     print()
 
+# Creating a dictionary with frequency of each element in list :
+dict1 = {}
+words = ["python", "java", "python", "c", "java", "python"]
+for word in words :
+    if word in dict1.keys() :
+        dict1[word] += 1
+    else :
+        dict1[word] = 1
+print(dict1)
