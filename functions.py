@@ -25,3 +25,32 @@ def describe_city(name, city = "tokyo") :
 describe_city("shreya")
 describe_city(name = "devyani", city = "seoul")
 describe_city(city = "shibul", name = "piu")
+
+def city_country(city, country) :
+    value = f"{city.title()}, {country.title()}"
+    return value
+
+print(city_country("delhi", "india"))
+print(city_country("tokyo", "japan"))
+print(city_country("shanghai", "china"))
+
+def make_album(artist_name, album_title, songs=None) :
+    music_album = {'Artist Name' : artist_name, 'Album Title' : album_title}
+    if songs :
+        music_album['No. of songs'] = songs
+    return music_album
+
+print(make_album("BTS", "Butter", 10))
+print(make_album("Passengers", "Let her go"))
+print(make_album("Him and I", "I thought I saw your face to"))
+
+while True :
+    print("[NOTE : Enter 'q' to quit]")
+    artist = input("Enter Artist's name :")
+    if artist == 'q' :
+        break
+    album = input("Enter Album's name :")
+    if album == 'q' :
+        break
+    
+    print(make_album(artist, album))
